@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(imagen/fondo.jpg);
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+header{
+  display: flex;
+  height: 70px;
+}
+
+.logo{
+  width: 280px;
+  height: 260px;
+  background: url(imagen/dibujo.png);
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  filter: drop-shadow(8px 7px 21px  #984aeb );
+  animation: rotar 4s linear infinite;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+@keyframes rotar{
+   from{
+    transform: rotate(180deg);
+   }
+   to{
+    transform: rotateY(-180deg);
+   }
+}
+
+.bottom_part{
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  bottom: -94px;
+  background: #242424;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px #11111136;
+  transform: rotateX(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_part::before{
+  content: '';
+  width: 16rem;
+  position: absolute;
+  bottom: 5rem;
+  background:#af77eb;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 10px #11111136;
+  filter: blur(30px);
+}
+
+
+
+.titulo {
+  color: #000000;
+  font-size: 80px;
+  margin: 10px 0;
+}
+
+.presentacion {
+  border-radius: 15px;
+  box-shadow:  0 8px 10px rgba(0, 0, 0, 0.6);
+  background-color: rgb(227, 202, 247);
+  margin: 80px auto;
+
+}
+
+.container {
+  padding: 50px 10px 0;
+}
+
+.input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 20px;
+  margin: 10px 0;
+  width: 15%;
+}
+
+input {
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.boton {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: 800;
+  display: block;
+  padding: 5px 10px;
+  margin: 10px auto;
+  width: 40%
+}
+
+.botonVolver {
+  background-color: #c8abe7;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: 800;
+  display: block;
+  padding: 5px 10px;
+  margin: 10px auto;
+  width: 40%
+}
+
+.boton:hover,
+.botonTrivias:hover
+.botonSiguiente:hover {
+  background-color: #d4f3ec;
+  color: rgb(14, 12, 12);
+  border: 1px solid white
+}
+
+.botonTrivias {
+  font-family: 'Indie Flower', cursive;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px auto;
+  width: 80%
+}
+
+.pregunta {
+  display:block;
+  font-weight: 600;
+  background-color: #cba4a4;
+   margin: 10px auto;
+   width: 30%
+}
+
+
+.botonSiguiente {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 30%;
+  margin-left: 60%;
+  font-weight: bold;
+}
+
+.cronometro {
+  border-radius: 10px;
+  border: 1px solid #070a0c;
+  min-height: 30px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.puntos {
+  font-size:20px;
+  margin: 5px ;
+}
+
+.imgDecoracion {
+  width:180px;
+}
+
+.puntajeTitulo {
+  color:  #714c99;
+  font-size: 30px
+}
+
+.puntaje {
+  color: #c9b2ef;
+  font-size: 40px;
+}
